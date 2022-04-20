@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafael B</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="aboutme">
+        <img src="media/aboutme.png" alt="">
+    </div>
+
+    <ul id="nav">
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="bands.html">Top 10 Bands</a></li>
+        <li><a href="songs.html">Top 10 Songs</a></li>
+        <li><a href="m and a.html">Manga and Anime</a></li>
+        <li><a href="specs.html">PC Specs</a></li>
+    </ul>
+
+    <ul id="info">
+        <li><p>Name: Rafael "Damunyo" Bolanos</p></li>
+        <li><p>Age: 18</p></li>
+        <li><p>Birthday: May 28</p></li>
+        <li><p id="talent">Talents and Hobbies: Can play the drums, guitar, and bass. Can cook.
+                            Likes to read manga and books.</p></li>
+        <li><p id="rafinfo">Rafael comes from a family of musicians and theater actors, hence his interest in anything that is related to music. 
+                    He can play the drums, the guitar, and the bass. He can sing but prefers not to due to his shyness. 
+                    He is currently in his senior years studying Mobile App and Web Development in STI College Las Pinas. 
+                    Other than programming, he also likes to build computers and tinker with them.
+                    His favorite food would be fried pork with ampalaya and tausi, topped with a lot tofu</p></li>
+    </ul>
+    
+    <div class="slideshow">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="media/raf1.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="media/raf2.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="media/raf3.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="media/raf4.jpg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>  
+    </div>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n){
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";
+            }
+    </script>
+</body>
+</html>

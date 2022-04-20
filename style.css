@@ -1,0 +1,220 @@
+body{
+    margin-right: 5% ;
+    margin-left: 5% ;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+        transition: ease-in;
+    }
+}
+
+@keyframes transitionOut{
+    from{
+        opacity: 1;
+    }
+
+    to{
+        opacity: 0;
+        transition: ease-out;
+    }
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+#aboutme{
+    position: absolute;
+    top: 35px;
+    left: 425px;
+    animation: transitionIn 1s;
+}
+
+#bands{
+    position: absolute;
+    top: 35px;
+    left: 330px;
+    animation: transitionIn 1s;
+}
+
+#bandspng{
+    width: 75%;
+}
+
+#songs{
+    position: absolute;
+    top: 35px;
+    left: 330px;
+    animation: transitionIn 1s;
+}
+
+#songspng{
+    width: 79.5%;
+}
+
+#manga{
+    position: absolute;
+    top: 40px;
+    left: 330px;
+    animation: transitionIn 1s;
+}
+
+#mangapng{
+    width: 79.5%;
+}
+
+#specs{
+    position: absolute;
+    top: 35px;
+    left: 470px;
+    animation: transitionIn 1s;
+}
+
+#specspng{
+    width: 79.5%;
+}
+
+#nav li{
+    display: inline;
+    text-decoration: none;
+    text-align: center;
+}
+
+#nav{
+    position: relative;
+    background-color: rgba(255, 253, 253, 0.842);
+    margin-top: 15%;
+    border-radius: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+    animation: transitionIn 1s;
+}
+
+#nav a{
+    text-decoration: none;
+    color: black;
+    padding: 25px;
+    font-size:x-large;
+}
+
+#info{
+    position: relative;
+    top: 50px;
+    text-align: left;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.774);
+    margin-right: 40%;
+    border-radius: 20px;
+    animation: transitionIn 1s;
+}
+
+#info li{
+    position: relative;
+    left: 100px;
+    list-style: none;
+    font-size: 25px;
+}
+
+#talent{
+    width: 75%;
+}
+
+#rafinfo{
+    width: 75%;
+}
+
+.slideshow{
+    max-width: 500px;
+    position: absolute;
+    left: 64%;
+    top: 60%;
+}
+
+.mySlides{
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.numbertext {
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+td{
+    border: solid 2px;
+    border-radius: 10px;
+}
+
+.table{
+    position: relative;
+    border: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0);  
+    background-color: rgba(255, 255, 255, 0.678);
+    left: 299px;
+    text-align: center;
+    width: 60%;
+    animation: transitionIn 1s;
+}
+
+.img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+td{
+    width: 200px;
+}
+
+#blank{
+    border: none;
+}
