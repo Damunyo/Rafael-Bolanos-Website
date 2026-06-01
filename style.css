@@ -42,7 +42,7 @@ body{
 #aboutme{
     position: absolute;
     top: 35px;
-    left: 450px;
+    left: 500px;
     animation: transitionIn 1s;
 }
 
